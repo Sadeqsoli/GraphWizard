@@ -1,0 +1,81 @@
+digraph TableGraph {
+	rankdir=LR size=10
+	Science [label="Science
+علم"]
+	System [label="System
+سیستم"]
+	Problem [label="Problem
+مسئله"]
+	Concept [label="Concept
+مفهوم"]
+	Framework [label="Framework
+چارچوب"]
+	Paradigm [label="Paradigm
+پارادایم"]
+	Architecture [label="Architecture
+معماری"]
+	Pattern [label="Pattern
+الگو"]
+	"Architectural Pattern" [label="Architectural Pattern
+الگوی معماری"]
+	Model [label="Model
+مدل"]
+	Approach [label="Approach
+رویکرد"]
+	Hypothesis [label="Hypothesis
+فرضیه"]
+	Theorem [label="Theorem
+قضیه"]
+	Theory [label="Theory
+نظریه"]
+	Law [label="Law
+قانون"]
+	Principle [label="Principle
+اصل"]
+	Observation [label="Observation
+مشاهده"]
+	"Data Collection" [label="Data Collection
+جمع آوری داده"]
+	"Data analysis" [label="Data analysis
+تحلیل داده ها"]
+	Intuition [label="Intuition
+شهود"]
+	Experience [label="Experience
+تجربه"]
+	Test [label="Test
+آزمون"]
+	"Quantitative and Qualitative Methods" [label="Quantitative and Qualitative Methods
+روش‌های کمی و کیفی"]
+	Induction [label="Induction
+استقرا"]
+	Deduction [label="Deduction
+قیاس"]
+	Inference [label="Inference
+استنتاج"]
+	Research [label="Research
+پژوهش"]
+	Science -> System
+	System -> Problem
+	Problem -> Concept
+	Concept -> Science
+	Framework -> Paradigm
+	Architecture -> Pattern
+	Pattern -> "Architectural Pattern"
+	"Architectural Pattern" -> Model
+	Model -> Approach
+	Approach -> Hypothesis
+	Hypothesis -> Observation
+	Theorem -> Theory
+	Theory -> Law
+	Law -> Principle
+	Observation -> "Data Collection"
+	"Data Collection" -> "Data analysis"
+	"Data analysis" -> Intuition
+	Intuition -> Experience
+	Experience -> Test
+	Test -> "Quantitative and Qualitative Methods"
+	"Quantitative and Qualitative Methods" -> Induction
+	Induction -> Deduction
+	Deduction -> Inference
+	Inference -> Research
+}

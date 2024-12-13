@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Graph</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.21.0/cytoscape.min.js"></script>
+    <style>
+        #cy {
+            width: 100%;
+            height: 100vh;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="cy"></div>
+    <script>
+        // Load the graph data from the exported JSON file
+        const graphData = {
+            nodes: [
+                { data: { id: 'Science', label: 'Science\\nعلم' } },
+                { data: { id: 'System', label: 'System\\nسیستم' } },
+                { data: { id: 'Problem', label: 'Problem\\nمسئله' } },
+                { data: { id: 'Concept', label: 'Concept\\nمفهوم' } },
+                { data: { id: 'Framework', label: 'Framework\\nچارچوب' } },
+                { data: { id: 'Paradigm', label: 'Paradigm\\nپارادایم' } },
+                { data: { id: 'Architecture', label: 'Architecture\\nمعماری' } },
+                { data: { id: 'Pattern', label: 'Pattern\\nالگو' } },
+                { data: { id: 'Architectural Pattern', label: 'Architectural Pattern\\nالگوی معماری' } },
+                { data: { id: 'Model', label: 'Model\\nمدل' } },
+                { data: { id: 'Approach', label: 'Approach\\nرویکرد' } },
+                { data: { id: 'Hypothesis', label: 'Hypothesis\\nفرضیه' } },
+                { data: { id: 'Theorem', label: 'Theorem\\nقضیه' } },
+                { data: { id: 'Theory', label: 'Theory\\nنظریه' } },
+                { data: { id: 'Law', label: 'Law\\nقانون' } },
+                { data: { id: 'Principle', label: 'Principle\\nاصل' } },
+                { data: { id: 'Observation', label: 'Observation\\nمشاهده' } },
+                { data: { id: 'Data Collection', label: 'Data Collection\\nجمع آوری داده' } },
+                { data: { id: 'Data analysis', label: 'Data analysis\\nتحلیل داده ها' } },
+                { data: { id: 'Intuition', label: 'Intuition\\nشهود' } },
+                { data: { id: 'Experience', label: 'Experience\\nتجربه' } },
+                { data: { id: 'Test', label: 'Test\\nآزمون' } },
+                { data: { id: 'Quantitative and Qualitative Methods', label: 'Quantitative and Qualitative Methods\\nروش‌های کمی و کیفی' } },
+                { data: { id: 'Induction', label: 'Induction\\nاستقرا' } },
+                { data: { id: 'Deduction', label: 'Deduction\\nقیاس' } },
+                { data: { id: 'Inference', label: 'Inference\\nاستنتاج' } },
+                { data: { id: 'Research', label: 'Research\\nپژوهش' } },
+            ],
+            edges: [
+                { data: { source: 'Science', target: 'System' } },
+                { data: { source: 'System', target: 'Problem' } },
+                { data: { source: 'Problem', target: 'Concept' } },
+                { data: { source: 'Concept', target: 'Science' } },
+                { data: { source: 'Framework', target: 'Paradigm' } },
+                { data: { source: 'Architecture', target: 'Pattern' } },
+                { data: { source: 'Pattern', target: 'Architectural Pattern' } },
+                { data: { source: 'Architectural Pattern', target: 'Model' } },
+                { data: { source: 'Model', target: 'Approach' } },
+                { data: { source: 'Approach', target: 'Hypothesis' } },
+                { data: { source: 'Hypothesis', target: 'Observation' } },
+                { data: { source: 'Theorem', target: 'Theory' } },
+                { data: { source: 'Theory', target: 'Law' } },
+                { data: { source: 'Law', target: 'Principle' } },
+                { data: { source: 'Observation', target: 'Data Collection' } },
+                { data: { source: 'Data Collection', target: 'Data analysis' } },
+                { data: { source: 'Data analysis', target: 'Intuition' } },
+                { data: { source: 'Intuition', target: 'Experience' } },
+                { data: { source: 'Experience', target: 'Test' } },
+                { data: { source: 'Test', target: 'Quantitative and Qualitative Methods' } },
+                { data: { source: 'Quantitative and Qualitative Methods', target: 'Induction' } },
+                { data: { source: 'Induction', target: 'Deduction' } },
+                { data: { source: 'Deduction', target: 'Inference' } },
+                { data: { source: 'Inference', target: 'Research' } },
+            ]
+        };
+
+        // Initialize Cytoscape
+        const cy = cytoscape({
+            container: document.getElementById('cy'),
+            elements: graphData,
+            style: [
+                {
+                    selector: 'node',
+                    style: {
+                        'content': 'data(label)',
+                        'text-valign': 'center',
+                        'color': '#000',
+                        'background-color': '#aaa',
+                        'border-width': 2,
+                        'border-color': '#000',
+                        'font-size': 10,
+                    }
+                },
+                {
+                    selector: 'edge',
+                    style: {
+                        'width': 2,
+                        'line-color': '#888',
+                        'target-arrow-color': '#888',
+                        'target-arrow-shape': 'triangle',
+                    }
+                }
+            ],
+            layout: {
+                name: 'dagre',
+                rankDir: 'LR',
+            }
+        });
+    </script>
+</body>
+</html>

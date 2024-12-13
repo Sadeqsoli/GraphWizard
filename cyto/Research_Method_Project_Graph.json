@@ -1,0 +1,484 @@
+{
+  "nodes": [
+    {
+      "id": "Science",
+      "label": "Science",
+      "bilingual_label": "Science / علم",
+      "definition": "فرآیند سیستماتیک کسب دانش درباره جهان از طریق مشاهده، تجربه، و آزمایش",
+      "example": "مطالعه قوانین فیزیکی مثل قانون جاذبه"
+    },
+    {
+      "id": "System",
+      "label": "System",
+      "bilingual_label": "System / سیستم",
+      "definition": "مجموعه‌ای از اجزا یا عناصر که با یکدیگر تعامل دارند و هدف مشخصی را دنبال می‌کنند",
+      "example": "سیستم عامل کامپیوتر (مانند Linux)"
+    },
+    {
+      "id": "Problem",
+      "label": "Problem",
+      "bilingual_label": "Problem / مسئله",
+      "definition": "شکاف یا چالشی که نیازمند راه‌حل یا پاسخ است",
+      "example": "یافتن دلیل کرش کردن یک برنامه"
+    },
+    {
+      "id": "Concept",
+      "label": "Concept",
+      "bilingual_label": "Concept / مفهوم ",
+      "definition": "یک ایده یا درک ذهنی از یک موضوع یا پدیده",
+      "example": "مفهوم امنیت در فناوری اطلاعات"
+    },
+    {
+      "id": "Framework",
+      "label": "Framework",
+      "bilingual_label": "Framework / چارچوب ",
+      "definition": "ساختاری است که برای ایجاد یا توسعه چیزی استفاده می‌شود",
+      "example": "چارچوب Agile برای مدیریت پروژه‌های نرم‌افزاری"
+    },
+    {
+      "id": "Paradigm",
+      "label": "Paradigm",
+      "bilingual_label": "Paradigm / پارادایم",
+      "definition": "یک مدل یا الگو از تفکر که یک سیستم علمی را راهنمایی می‌کند",
+      "example": "پارادایم مکانیک کلاسیک در فیزیک"
+    },
+    {
+      "id": "Architecture",
+      "label": "Architecture",
+      "bilingual_label": "Architecture / معماری",
+      "definition": "طرح کلی یک سیستم که شامل ساختار، اجزا و ارتباطات آنها است",
+      "example": "معماری سیستم‌های کامپیوتری که شامل سرورها، دستگاه‌ها و ارتباطات است"
+    },
+    {
+      "id": "Pattern",
+      "label": "Pattern",
+      "bilingual_label": "Pattern /  الگو ",
+      "definition": "یک ساختار یا روشی که برای حل مشکلات در زمینه‌های مختلف به کار می‌رود",
+      "example": "الگوی طراحی MVC در برنامه‌نویسی وب"
+    },
+    {
+      "id": "Architectural Pattern",
+      "label": "Architectural Pattern",
+      "bilingual_label": "Architectural Pattern /  الگوی معماری ",
+      "definition": "الگوی خاصی که برای ساختار یک سیستم یا پروژه به کار می‌رود",
+      "example": "الگوی معماری میکروسرویس‌ها"
+    },
+    {
+      "id": "Model",
+      "label": "Model",
+      "bilingual_label": " Model / مدل ",
+      "definition": "یک نمایش یا شبیه‌سازی از یک سیستم برای بررسی یا پیش‌بینی رفتار آن",
+      "example": "مدل ریاضی سیستم حرکتی یک اتومبیل"
+    },
+    {
+      "id": "Approach",
+      "label": "Approach",
+      "bilingual_label": "Approach / رویکرد",
+      "definition": "روش یا طریقی برای رسیدن به یک هدف یا حل یک مشکل",
+      "example": "رویکرد تحلیلی در حل مسائل ریاضی"
+    },
+    {
+      "id": "Hypothesis",
+      "label": "Hypothesis",
+      "bilingual_label": "Hypothesis / فرضیه",
+      "definition": "پیش‌بینی یا توضیحی قابل آزمون برای یک مسئله یا پدیده.",
+      "example": "فرضیه این است که نرخ رشد گیاهان در شرایط نور طبیعی بیشتر از نور مصنوعی است"
+    },
+    {
+      "id": "Theorem",
+      "label": "Theorem",
+      "bilingual_label": "Theorem / قضیه",
+      "definition": "یک حقیقت ریاضی که از طریق استدلال منطقی از اصول اولیه اثبات شده است",
+      "example": "قضیه فیثاغورس در هندسه"
+    },
+    {
+      "id": "Theory",
+      "label": "Theory",
+      "bilingual_label": "Theory / نظریه",
+      "definition": "یک سیستم جامع از اصول و قوانین که برای توضیح یک پدیده استفاده می‌شود",
+      "example": "نظریه نسبیت انیشتین"
+    },
+    {
+      "id": "Law",
+      "label": "Law",
+      "bilingual_label": "Law / قانون",
+      "definition": "اصولی که در طبیعت یا علم برای توصیف رفتارهای ثابت و قابل پیش‌بینی استفاده می‌شود",
+      "example": "قانون گرانش نیوتن"
+    },
+    {
+      "id": "Principle",
+      "label": "Principle",
+      "bilingual_label": "Principle / اصل",
+      "definition": "یک قاعده یا قانون بنیادی که به عنوان اساس تفکر یا عمل استفاده می‌شود",
+      "example": "اصل بقای انرژی در فیزیک"
+    },
+    {
+      "id": "Observation",
+      "label": "Observation",
+      "bilingual_label": "Observation / مشاهده",
+      "definition": "فرآیند مشاهده و ثبت تغییرات در یک پدیده به طور مستقیم شامل تمام حواس و تجربه",
+      "example": "مشاهده تغییرات دما در یک آزمایش علمی"
+    },
+    {
+      "id": "Data Collection",
+      "label": "Data Collection",
+      "bilingual_label": "Data Collection / جمع آوری داده",
+      "definition": "فرآیند جمع‌آوری و ثبت اطلاعات به منظور تحلیل و بررسی",
+      "example": "جمع‌آوری داده‌های مربوط به سلامت بیماران در یک تحقیق پزشکی"
+    },
+    {
+      "id": "Data Analysis",
+      "label": "Data Analysis",
+      "bilingual_label": "Data Analysis / تحلیل داده ها",
+      "definition": "فرآیند پردازش داده‌ها به منظور استخراج اطلاعات معنی‌دار",
+      "example": "تحلیل داده‌های نظرسنجی برای شناسایی الگوهای رفتاری"
+    },
+    {
+      "id": "Intuition",
+      "label": "Intuition",
+      "bilingual_label": "Intuition / شهود",
+      "definition": "دانشی که بدون استدلال منطقی به دست می‌آید",
+      "example": "تصمیم‌گیری شهودی در شبیه‌سازی‌های فیزیکی"
+    },
+    {
+      "id": "Experience",
+      "label": "Experience",
+      "bilingual_label": "Experience / تجربه",
+      "definition": "دانش حاصل از آزمایش یا مواجهه با موقعیت‌های مختلف",
+      "example": "تجربه یک محقق در زمینه آزمایش‌های مختلف"
+    },
+    {
+      "id": "Test",
+      "label": "Test",
+      "bilingual_label": "Test / آزمون",
+      "definition": "روشی برای ارزیابی یک فرضیه یا نظریه از طریق آزمایش و اندازه‌گیری",
+      "example": "آزمون‌های پزشکی برای تشخیص بیماری‌ها"
+    },
+    {
+      "id": "Quantitative and Qualitative Methods",
+      "label": "Quantitative and Qualitative Methods",
+      "bilingual_label": "Quantitative and Qualitative Methods / روش‌های کمی و کیفی",
+      "definition": "روش‌هایی که به ترتیب بر اندازه‌گیری و تحلیل عددی داده‌ها (کمی) یا بررسی معانی و ویژگی‌های کیفی (کیفی) متمرکز هستند",
+      "example": "روش کمی در تحلیل داده‌های فروش و روش کیفی در تحلیل نظرات مشتریان"
+    },
+    {
+      "id": "Induction",
+      "label": "Induction",
+      "bilingual_label": "Induction / استقرا ",
+      "definition": "روشی است که در آن از نمونه‌های خاص به قوانین عمومی نتیجه‌گیری می‌شود",
+      "example": "استقرا در یافتن الگوهای ریاضی"
+    },
+    {
+      "id": "Deduction",
+      "label": "Deduction",
+      "bilingual_label": "Deduction / قیاس",
+      "definition": "روشی است که در آن از قوانین عمومی، نمونه های خاص نتیجه گیری می شود",
+      "example": "قیاس بین عملکرد مغز انسان و یک کامپیوتر"
+    },
+    {
+      "id": "Inference",
+      "label": "Inference",
+      "bilingual_label": "Inference / استتنتاج",
+      "definition": "فرآیند استدلالی که از یک قانون عمومی به نتایج خاص می‌رسد",
+      "example": "استتنتاج در منطق ریاضی"
+    },
+    {
+      "id": "Research",
+      "label": "Research",
+      "bilingual_label": "Research / پژوهش",
+      "definition": "فرآیند جستجو و مطالعه برای کشف یا تأسیس دانش جدید",
+      "example": "پژوهش‌های علمی در زمینه تغییرات اقلیمی"
+    }
+  ],
+  "edges": [
+    {
+      "from": ["Research", "Theory", "Law", "Paradigm"],
+      "to": "Science",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Research"],
+      "to": "Science",
+      "type": "co-requirement"
+    },
+    {
+      "from": [
+        "Framework",
+        "Architecture",
+        "Approach",
+        "Data Collection",
+        "Theory"
+      ],
+      "to": "System",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Framework", "Architecture"],
+      "to": "System",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Observation", "Experience", "Intuition"],
+      "to": "Problem",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Concept"],
+      "to": "Problem",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Observation", "Experience"],
+      "to": "Concept",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Problem", "Pattern"],
+      "to": "Concept",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Concept", "Pattern", "Principle"],
+      "to": "Framework",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Paradigm", "Architecture", "Architectural Pattern"],
+      "to": "Framework",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Theory", "Principle", "Law"],
+      "to": "Paradigm",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Framework", "Architecture", "Architectural Pattern"],
+      "to": "Paradigm",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Framework", "Approach"],
+      "to": "Architecture",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Framework", "Paradigm", "Architectural Pattern"],
+      "to": "Architecture",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Observation", "Experience"],
+      "to": "Pattern",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Problem", "Concept"],
+      "to": "Pattern",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Architecture"],
+      "to": "Architectural Pattern",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Framework", "Paradigm", "Architectural Pattern", "Model"],
+      "to": "Architectural Pattern",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Observation", "Experience", "Concept", "Pattern"],
+      "to": "Model",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Concept", "Pattern"],
+      "to": "Model",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Paradigm", "Framework", "Theory"],
+      "to": "Approach",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Paradigm", "Framework", "Quantitative and Qualitative Methods"],
+      "to": "Approach",
+      "type": "co-requirement"
+    },
+    {
+      "from": [
+        "Problem",
+        "Concept",
+        "Observation",
+        "Data Collection",
+        "Data Analysis"
+      ],
+      "to": "Hypothesis",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Test"],
+      "to": "Hypothesis",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Framework", "Theory"],
+      "to": "Theorem",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Theory"],
+      "to": "Theorem",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Test"],
+      "to": "Theory",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Principle", "Law"],
+      "to": "Theory",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Observation", "Data Collection", "Theory"],
+      "to": "Law",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Principle", "Theory"],
+      "to": "Law",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Pattern", "Test"],
+      "to": "Principle",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Theory", "Law"],
+      "to": "Principle",
+      "type": "co-requirement"
+    },
+    {
+      "from": [],
+      "to": "Observation",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Data Collection", "Experience", "Intuition"],
+      "to": "Observation",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Observation", "Experience"],
+      "to": "Data Collection",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Experience", "Observation", "Intuition"],
+      "to": "Data Collection",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Data Collection"],
+      "to": "Data Analysis",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Inference"],
+      "to": "Data Analysis",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Experience", "Observation"],
+      "to": "Intuition",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Data Collection", "Experience", "Observation"],
+      "to": "Intuition",
+      "type": "co-requirement"
+    },
+    {
+      "from": [],
+      "to": "Experience",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Data Collection", "Observation", "Intuition"],
+      "to": "Experience",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Hypothesis"],
+      "to": "Test",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Hypothesis"],
+      "to": "Test",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Problem", "Hypothesis", "Framework", "Data Analysis"],
+      "to": "Quantitative and Qualitative Methods",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Approach"],
+      "to": "Quantitative and Qualitative Methods",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Observation", "Data Collection"],
+      "to": "Induction",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Deduction", "Inference"],
+      "to": "Induction",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Theory", "Law", "Principle"],
+      "to": "Deduction",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Induction", "Inference"],
+      "to": "Deduction",
+      "type": "co-requirement"
+    },
+    {
+      "from": ["Data Collection", "Theory", "Hypothesis", "Principle"],
+      "to": "Inference",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Deduction", "Induction"],
+      "to": "Inference",
+      "type": "co-requirement"
+    },
+    {
+      "from": [
+        "Problem",
+        "Hypothesis",
+        "Approach",
+        "Observation",
+        "Data Collection",
+        "Data Analysis"
+      ],
+      "to": "Research",
+      "type": "pre-requirement"
+    },
+    {
+      "from": ["Science"],
+      "to": "Research",
+      "type": "co-requirement"
+    }
+  ]
+}
