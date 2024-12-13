@@ -19,9 +19,13 @@ This repository provides an interactive, hierarchical graph visualization using 
 ## Project Structure
 
 project_root/
+
 ├── cyto/                # Directory for Cytoscape-related scripts or resources
+
 ├── graphviz/            # Directory for Graphviz-related scripts or resources
+
 ├── venv/                # Virtual environment for Python dependencies
+
 ├── cry_graph.py 
 
 ## Getting Started
