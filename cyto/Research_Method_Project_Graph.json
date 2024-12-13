@@ -3,189 +3,189 @@
     {
       "id": "Science",
       "label": "Science",
-      "bilingual_label": "Science / علم",
+      "bilingual_label": "علم",
       "definition": "فرآیند سیستماتیک کسب دانش درباره جهان از طریق مشاهده، تجربه، و آزمایش",
       "example": "مطالعه قوانین فیزیکی مثل قانون جاذبه"
     },
     {
       "id": "System",
       "label": "System",
-      "bilingual_label": "System / سیستم",
+      "bilingual_label": "سیستم",
       "definition": "مجموعه‌ای از اجزا یا عناصر که با یکدیگر تعامل دارند و هدف مشخصی را دنبال می‌کنند",
       "example": "سیستم عامل کامپیوتر (مانند Linux)"
     },
     {
       "id": "Problem",
       "label": "Problem",
-      "bilingual_label": "Problem / مسئله",
+      "bilingual_label": "مسئله",
       "definition": "شکاف یا چالشی که نیازمند راه‌حل یا پاسخ است",
       "example": "یافتن دلیل کرش کردن یک برنامه"
     },
     {
       "id": "Concept",
       "label": "Concept",
-      "bilingual_label": "Concept / مفهوم ",
+      "bilingual_label": "مفهوم",
       "definition": "یک ایده یا درک ذهنی از یک موضوع یا پدیده",
       "example": "مفهوم امنیت در فناوری اطلاعات"
     },
     {
       "id": "Framework",
       "label": "Framework",
-      "bilingual_label": "Framework / چارچوب ",
+      "bilingual_label": "چارچوب ",
       "definition": "ساختاری است که برای ایجاد یا توسعه چیزی استفاده می‌شود",
       "example": "چارچوب Agile برای مدیریت پروژه‌های نرم‌افزاری"
     },
     {
       "id": "Paradigm",
       "label": "Paradigm",
-      "bilingual_label": "Paradigm / پارادایم",
+      "bilingual_label": "پارادایم",
       "definition": "یک مدل یا الگو از تفکر که یک سیستم علمی را راهنمایی می‌کند",
       "example": "پارادایم مکانیک کلاسیک در فیزیک"
     },
     {
       "id": "Architecture",
       "label": "Architecture",
-      "bilingual_label": "Architecture / معماری",
+      "bilingual_label": "معماری",
       "definition": "طرح کلی یک سیستم که شامل ساختار، اجزا و ارتباطات آنها است",
       "example": "معماری سیستم‌های کامپیوتری که شامل سرورها، دستگاه‌ها و ارتباطات است"
     },
     {
       "id": "Pattern",
       "label": "Pattern",
-      "bilingual_label": "Pattern /  الگو ",
+      "bilingual_label": "الگو ",
       "definition": "یک ساختار یا روشی که برای حل مشکلات در زمینه‌های مختلف به کار می‌رود",
       "example": "الگوی طراحی MVC در برنامه‌نویسی وب"
     },
     {
       "id": "Architectural Pattern",
       "label": "Architectural Pattern",
-      "bilingual_label": "Architectural Pattern /  الگوی معماری ",
+      "bilingual_label": "الگوی معماری",
       "definition": "الگوی خاصی که برای ساختار یک سیستم یا پروژه به کار می‌رود",
       "example": "الگوی معماری میکروسرویس‌ها"
     },
     {
       "id": "Model",
       "label": "Model",
-      "bilingual_label": " Model / مدل ",
+      "bilingual_label": "مدل",
       "definition": "یک نمایش یا شبیه‌سازی از یک سیستم برای بررسی یا پیش‌بینی رفتار آن",
       "example": "مدل ریاضی سیستم حرکتی یک اتومبیل"
     },
     {
       "id": "Approach",
       "label": "Approach",
-      "bilingual_label": "Approach / رویکرد",
+      "bilingual_label": "رویکرد",
       "definition": "روش یا طریقی برای رسیدن به یک هدف یا حل یک مشکل",
       "example": "رویکرد تحلیلی در حل مسائل ریاضی"
     },
     {
       "id": "Hypothesis",
       "label": "Hypothesis",
-      "bilingual_label": "Hypothesis / فرضیه",
+      "bilingual_label": "فرضیه",
       "definition": "پیش‌بینی یا توضیحی قابل آزمون برای یک مسئله یا پدیده.",
       "example": "فرضیه این است که نرخ رشد گیاهان در شرایط نور طبیعی بیشتر از نور مصنوعی است"
     },
     {
       "id": "Theorem",
       "label": "Theorem",
-      "bilingual_label": "Theorem / قضیه",
+      "bilingual_label": "قضیه",
       "definition": "یک حقیقت ریاضی که از طریق استدلال منطقی از اصول اولیه اثبات شده است",
       "example": "قضیه فیثاغورس در هندسه"
     },
     {
       "id": "Theory",
       "label": "Theory",
-      "bilingual_label": "Theory / نظریه",
+      "bilingual_label": "نظریه",
       "definition": "یک سیستم جامع از اصول و قوانین که برای توضیح یک پدیده استفاده می‌شود",
       "example": "نظریه نسبیت انیشتین"
     },
     {
       "id": "Law",
       "label": "Law",
-      "bilingual_label": "Law / قانون",
+      "bilingual_label": "قانون",
       "definition": "اصولی که در طبیعت یا علم برای توصیف رفتارهای ثابت و قابل پیش‌بینی استفاده می‌شود",
       "example": "قانون گرانش نیوتن"
     },
     {
       "id": "Principle",
       "label": "Principle",
-      "bilingual_label": "Principle / اصل",
+      "bilingual_label": "اصل",
       "definition": "یک قاعده یا قانون بنیادی که به عنوان اساس تفکر یا عمل استفاده می‌شود",
       "example": "اصل بقای انرژی در فیزیک"
     },
     {
       "id": "Observation",
       "label": "Observation",
-      "bilingual_label": "Observation / مشاهده",
+      "bilingual_label": "مشاهده",
       "definition": "فرآیند مشاهده و ثبت تغییرات در یک پدیده به طور مستقیم شامل تمام حواس و تجربه",
       "example": "مشاهده تغییرات دما در یک آزمایش علمی"
     },
     {
       "id": "Data Collection",
       "label": "Data Collection",
-      "bilingual_label": "Data Collection / جمع آوری داده",
+      "bilingual_label": "جمع آوری داده",
       "definition": "فرآیند جمع‌آوری و ثبت اطلاعات به منظور تحلیل و بررسی",
       "example": "جمع‌آوری داده‌های مربوط به سلامت بیماران در یک تحقیق پزشکی"
     },
     {
       "id": "Data Analysis",
       "label": "Data Analysis",
-      "bilingual_label": "Data Analysis / تحلیل داده ها",
+      "bilingual_label": "تحلیل داده ها",
       "definition": "فرآیند پردازش داده‌ها به منظور استخراج اطلاعات معنی‌دار",
       "example": "تحلیل داده‌های نظرسنجی برای شناسایی الگوهای رفتاری"
     },
     {
       "id": "Intuition",
       "label": "Intuition",
-      "bilingual_label": "Intuition / شهود",
+      "bilingual_label": "شهود",
       "definition": "دانشی که بدون استدلال منطقی به دست می‌آید",
       "example": "تصمیم‌گیری شهودی در شبیه‌سازی‌های فیزیکی"
     },
     {
       "id": "Experience",
       "label": "Experience",
-      "bilingual_label": "Experience / تجربه",
+      "bilingual_label": "تجربه",
       "definition": "دانش حاصل از آزمایش یا مواجهه با موقعیت‌های مختلف",
       "example": "تجربه یک محقق در زمینه آزمایش‌های مختلف"
     },
     {
       "id": "Test",
       "label": "Test",
-      "bilingual_label": "Test / آزمون",
+      "bilingual_label": "آزمون",
       "definition": "روشی برای ارزیابی یک فرضیه یا نظریه از طریق آزمایش و اندازه‌گیری",
       "example": "آزمون‌های پزشکی برای تشخیص بیماری‌ها"
     },
     {
       "id": "Quantitative and Qualitative Methods",
       "label": "Quantitative and Qualitative Methods",
-      "bilingual_label": "Quantitative and Qualitative Methods / روش‌های کمی و کیفی",
+      "bilingual_label": "روش‌های کمی و کیفی",
       "definition": "روش‌هایی که به ترتیب بر اندازه‌گیری و تحلیل عددی داده‌ها (کمی) یا بررسی معانی و ویژگی‌های کیفی (کیفی) متمرکز هستند",
       "example": "روش کمی در تحلیل داده‌های فروش و روش کیفی در تحلیل نظرات مشتریان"
     },
     {
       "id": "Induction",
       "label": "Induction",
-      "bilingual_label": "Induction / استقرا ",
+      "bilingual_label": "استقرا",
       "definition": "روشی است که در آن از نمونه‌های خاص به قوانین عمومی نتیجه‌گیری می‌شود",
       "example": "استقرا در یافتن الگوهای ریاضی"
     },
     {
       "id": "Deduction",
       "label": "Deduction",
-      "bilingual_label": "Deduction / قیاس",
+      "bilingual_label": "قیاس",
       "definition": "روشی است که در آن از قوانین عمومی، نمونه های خاص نتیجه گیری می شود",
       "example": "قیاس بین عملکرد مغز انسان و یک کامپیوتر"
     },
     {
       "id": "Inference",
       "label": "Inference",
-      "bilingual_label": "Inference / استتنتاج",
+      "bilingual_label": "استتنتاج",
       "definition": "فرآیند استدلالی که از یک قانون عمومی به نتایج خاص می‌رسد",
       "example": "استتنتاج در منطق ریاضی"
     },
     {
       "id": "Research",
       "label": "Research",
-      "bilingual_label": "Research / پژوهش",
+      "bilingual_label": "پژوهش",
       "definition": "فرآیند جستجو و مطالعه برای کشف یا تأسیس دانش جدید",
       "example": "پژوهش‌های علمی در زمینه تغییرات اقلیمی"
     }

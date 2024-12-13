@@ -8,7 +8,7 @@ import dash_cytoscape as cyto
 app = dash.Dash(__name__)
 server = app.server
 
-# Define layers and nodes
+# Define layers and their nodes
 layer_map = {
     "Meta-level": ["Research", "Science"],
     "Macro Structure": ["Paradigm", "Framework", "Architecture", "Architectural Pattern", "Approach", "Quantitative and Qualitative Methods", "System"],
@@ -57,7 +57,8 @@ def format_node(node):
     return {
         'data': {
             'id': node['id'],
-            'label': node['bilingual_label'],
+            'label': node['label'],  # English label
+            'bilingual_label': node['bilingual_label'],  # English/Persian label
             'definition': node['definition'],
             'example': node['example'],
             'layer': layer,
@@ -101,13 +102,10 @@ for lv, node_list in nodes_by_layer_value.items():
     count = len(node_list)
     if count == 0:
         continue
-    # Calculate radius
     radius = (max_layer_value - lv) * radius_step
-    # If radius is 0 and there's more than one node, give them a small radius
+    # If radius is 0 and multiple nodes exist, spread them on a small circle
     if radius == 0 and count > 1:
-        radius = 50  # minimal radius to spread out meta-level nodes
-    elif radius == 0 and count == 1:
-        radius = 0  # single node can be at center
+        radius = 50
 
     for i, node in enumerate(node_list):
         angle = 2 * math.pi * i / count
@@ -116,22 +114,6 @@ for lv, node_list in nodes_by_layer_value.items():
         node['position'] = {'x': x, 'y': y}
 
 base_stylesheet = [
-    {
-        'selector': 'node',
-        'style': {
-            'label': 'data(label)',
-            'text-wrap': 'wrap',
-            'text-max-width': '90px',
-            'font-size': '14px',
-            'text-valign': 'center',
-            'text-halign': 'center',
-            'width': '80px',
-            'height': '80px',
-            'color': '#ffffff',
-            'border-color': '#333',
-            'border-width': 1
-        }
-    },
     {
         'selector': 'edge',
         'style': {
@@ -149,11 +131,34 @@ edge_color_map = {
     'co-requirement': '#2ECC40'     # Green
 }
 
-def generate_stylesheet(selected_layers, selected_edge_types):
+# The language selected will determine which label attribute we use
+def generate_stylesheet(selected_layers, selected_edge_types, selected_language):
     stylesheet = base_stylesheet[:]
+
+    # Determine which label attribute to show
+    label_field = 'label' if selected_language == 'en' else 'bilingual_label'
+
+    # Define node style with larger font and size
+    stylesheet.insert(0, {
+        'selector': 'node',
+        'style': {
+            'label': f'data({label_field})',
+            'text-wrap': 'wrap',
+            'text-max-width': '120px',
+            'font-size': '20px',
+            'text-valign': 'center',
+            'text-halign': 'center',
+            'width': '100px',
+            'height': '100px',
+            'color': '#ffffff',
+            'border-color': '#333',
+            'border-width': 1
+        }
+    })
 
     # Hide all nodes
     stylesheet.append({'selector': 'node', 'style': {'display': 'none'}})
+
     # Show nodes in selected layers with their colors
     for layer in selected_layers:
         color = layer_colors.get(layer, '#0074D9')
@@ -185,7 +190,7 @@ all_layers = list(layer_map.keys())
 edge_types = ['pre-requirement', 'co-requirement']
 
 app.layout = html.Div([
-    html.H1("Preset Layout with Concentric Positioning and Spaced Meta-level Nodes"),
+    html.H1("Preset Layout with Concentric Positioning and Language Toggle"),
     html.Div(style={'display': 'flex'}, children=[
         html.Div(className='controls', style={'width': '20%', 'padding': '10px'}, children=[
             html.H3("Layers"),
@@ -198,9 +203,21 @@ app.layout = html.Div([
             html.H3("Edge Types"),
             dcc.Checklist(
                 id='edge-types-checklist',
-                options=[{'label': 'Pre-Requirement', 'value': 'pre-requirement'},
-                         {'label': 'Co-Requirement', 'value': 'co-requirement'}],
+                options=[
+                    {'label': 'Pre-Requirement', 'value': 'pre-requirement'},
+                    {'label': 'Co-Requirement', 'value': 'co-requirement'}
+                ],
                 value=edge_types,
+                labelStyle={'display': 'block'}
+            ),
+            html.H3("Language"),
+            dcc.RadioItems(
+                id='language-radio',
+                options=[
+                    {'label': 'English', 'value': 'en'},
+                    {'label': 'Farsi', 'value': 'fa'}
+                ],
+                value='en',  # Default to bilingual
                 labelStyle={'display': 'block'}
             )
         ]),
@@ -210,7 +227,8 @@ app.layout = html.Div([
                 elements=elements,
                 layout={'name': 'preset'},
                 style={'width': '100%', 'height': '800px'},
-                stylesheet=generate_stylesheet(all_layers, edge_types)
+                # Initial stylesheet
+                stylesheet=generate_stylesheet(all_layers, edge_types, 'fa')
             ),
             html.Div(id='node-info', style={'marginTop': '20px', 'whiteSpace': 'pre-line'})
         ])
@@ -220,10 +238,11 @@ app.layout = html.Div([
 @app.callback(
     Output('cytoscape', 'stylesheet'),
     Input('layers-checklist', 'value'),
-    Input('edge-types-checklist', 'value')
+    Input('edge-types-checklist', 'value'),
+    Input('language-radio', 'value')
 )
-def update_stylesheet(selected_layers, selected_edge_types):
-    return generate_stylesheet(selected_layers, selected_edge_types)
+def update_stylesheet(selected_layers, selected_edge_types, selected_language):
+    return generate_stylesheet(selected_layers, selected_edge_types, selected_language)
 
 @app.callback(
     Output('node-info', 'children'),
@@ -233,7 +252,7 @@ def display_node_info(data):
     if data is None:
         return "Click on a node to see details."
     return html.Div([
-        html.H4(f"Details for: {data['label']}"),
+        html.H4(f"Details for: {data['bilingual_label']}"),
         html.P(f"Definition: {data['definition']}"),
         html.P(f"Example: {data['example']}")
     ])
