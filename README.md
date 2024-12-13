@@ -18,10 +18,11 @@ This repository provides an interactive, hierarchical graph visualization using 
 
 ## Project Structure
 
-. ├── c.py # Main Python script for running the Dash app 
-├── Research_Method_Project_Updated.json # JSON file containing nodes and edges 
-├── README.md # Project documentation 
-├── requirements.txt # Python dependencies
+project_root/
+├── cyto/                # Directory for Cytoscape-related scripts or resources
+├── graphviz/            # Directory for Graphviz-related scripts or resources
+├── venv/                # Virtual environment for Python dependencies
+├── cry_graph.py 
 
 ## Getting Started
 
